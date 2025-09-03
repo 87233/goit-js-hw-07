@@ -1,6 +1,5 @@
 const nameImput = document.querySelector('#name-input');
 const nameOutput = document.querySelector('#name-output');
-const text = document.querySelector('#hello');
 
 nameImput.addEventListener('input', (event) => { if (event.currentTarget.value === '') { 
    nameOutput.textContent = 'Anonymous'; 
