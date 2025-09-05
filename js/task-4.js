@@ -7,12 +7,14 @@ function formFunction(event) {
     
     
  const info = {
-    email: el.email.value,
-    password: el.password.value
+    email: el.email.value.trim(),
+    password: el.password.value.trim()
  }
- if(info.email === "" || info.password === "") {
+ if(info.email === '' || info.password === '') {
     alert('All form fields must be filled in');
- }
+    event.target.reset();
+ } else {
     console.log(info)
     event.target.reset();
+}
 }
